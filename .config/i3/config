@@ -1,3 +1,6 @@
+# Download FiraMono font in https://fonts.google.com/specimen/Fira+Mono
+font pango: Fira Mono Medium 12
+
 set $black            #000000
 set $black_secondary  #0c0c0c
 set $black_ternary    #282828
