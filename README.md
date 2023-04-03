@@ -1,4 +1,8 @@
-# i3
+# Simple UI for i3
+
+> A dark theme for i3.
+
+![](screenshot.png)
 
 ## Commit Style
 
