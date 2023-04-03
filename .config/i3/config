@@ -1,0 +1,47 @@
+set $black            #000000
+set $black_secondary  #0c0c0c
+set $black_ternary    #282828
+set $grey             #676E7D
+set $white            #ffffff
+set $orange           #ffa724
+set $purple           #ab47bd
+set $blue             #4051b5
+set $blue_secondary   #478487
+set $green            #4cae4f
+set $green_secondary  #689d69
+set $yellow           #f1dc15
+set $yellow_secondary #d79922
+set $red              #ff2c06
+set $red_secondary    #c9251d
+
+bar {
+        status_command i3status
+        separator_symbol "∥"
+        position top
+        workspace_min_width 25
+        padding 5 0 0 10
+
+        colors {
+                background $black
+                statusline $white
+                separator  $grey
+                
+                # class            border           background text
+                focused_workspace  $white           $white     $black
+                inactive_workspace $grey            $black     $white
+                active_workspace   $grey            $grey      $white
+                urgent_workspace   $black_secondary $red       $white
+                binding_mode       $black_secondary $red       $white
+        }
+}
+
+# class                   border           background     text   indicator child_border
+client.focused            $black_secondary $black         $white $red      $white
+client.focused_inactive   $black_secondary $black_ternary $grey  $grey     $grey
+
+client.background $black
+
+for_window [all] title_window_icon padding 5px
+
+gaps inner 15px
+gaps outer 1px
