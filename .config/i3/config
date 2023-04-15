@@ -2,19 +2,18 @@
 font pango: Fira Mono Medium 12
 
 set $black            #000000
+set $white            #ffffff
+set $grey             #676E7D
+set $blue             #4051b5
+set $green            #4cae4f
+set $yellow           #f1dc15
+set $red              #ff2c06
+
 set $black_secondary  #0c0c0c
 set $black_ternary    #282828
-set $grey             #676E7D
-set $white            #ffffff
-set $orange           #ffa724
-set $purple           #ab47bd
-set $blue             #4051b5
 set $blue_secondary   #478487
-set $green            #4cae4f
 set $green_secondary  #689d69
-set $yellow           #f1dc15
 set $yellow_secondary #d79922
-set $red              #ff2c06
 set $red_secondary    #c9251d
 
 bar {
